@@ -1,0 +1,82 @@
+body {
+  background-image: url(background.jpg);
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;  /* font personalizzato da Google Font */
+}
+
+.contenitore {
+  height: auto;
+  margin: 30px 15%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+header {
+  text-align: center;
+  color: lime;
+}
+
+/* Imposto dimensione e posizione del logo */
+header > img {
+  display: block;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Allineo i contenuti di nav e section */
+nav, section {
+  width: 80%;
+  margin: auto;
+  color: white;
+}
+
+/* Allineo i tre pulsanti al centro del div di color lime */
+nav {
+  box-sizing: border-box; /* Proprietà che mi permette di non sommare il padding sottostante alla dimensione totale della barra nav */
+  padding: 10px;
+  background-color: lime;
+  text-align: center;
+}
+
+/* creo un piccolo margine tra le varie section per migliorarne leggermente la leggibilità */
+section {
+  margin-bottom: 10px;
+}
+
+/* faccio in modo che tutti gli h3 all'interno delle varie section abbiano le stesse proprietà */
+section h3{
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+span {
+  display: block;
+  padding-top: 5px;
+}
+
+/* classi che indicano lo stato di carica */
+/* la classe sottostante contiene le proprietà comuni */
+.stato-carica {
+  height: 25px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+/* invece nelle classi sottostanti inserisco le proprietà peculiari per ogni stato di carica */
+.bassa {
+  background-color: red;
+  margin-right: 85%;
+}
+
+.media {
+  background-color: orange;
+  margin-right: 70%;
+}
+
+.alta {
+  background-color: lime;
+  margin-right: 40%;
+}
